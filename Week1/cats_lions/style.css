@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+
+}
+
+span {
+    background-color: yellow;
+}
+
+h3, ul {
+    margin-left: 50px;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+.media {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    border: 5px solid orangered;
+    display: block;
+    margin: 75px auto;
+}
+
+.red {
+    border: 1px solid red;
+    color: red;
+    text-align: center;
+    margin: 0 auto;
+    width: 1250px;
+    
+}
+
+table {
+    margin: 25px auto;
+    width: 1250px;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+td {
+    height: 80px;
+}
