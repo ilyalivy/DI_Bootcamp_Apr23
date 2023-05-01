@@ -91,7 +91,7 @@ label {
     font-size: 24px;
   }
 
-  i {
+  .icons i{
     margin-top: 20px;
     padding: 18px;
     font-size: 2em;
@@ -102,7 +102,49 @@ label {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    color: grey;
   }
 
+  .second {
+    background-color: aqua;
+  }
+
+  .fa-user-plus {
+    font-size: 6em;
+    padding-top: 200px;
+    color: white;
+  }
+
+  .second h1 {
+    color: white;
+  }
+
+  .enter {
+    font-size: 24px;
+    color: white;
+  }
   
+.register > * {
+     display: inline-block;
+     vertical-align: middle;
+     color: white;
+     font-size: 16px;
+     font-weight: bold;
+}
+
+.register {
+    display: table;
+    width: 40%;
+    height: 60px;
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid white;
+    color: white;
+}
+
+.register i {
+    font-size: 2rem;
+    padding: 0 10px;
+}
