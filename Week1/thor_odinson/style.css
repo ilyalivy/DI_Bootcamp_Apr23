@@ -75,3 +75,49 @@ footer {
     padding: 40px;
     font-size: 20px;
 }
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+    nav {
+        background-color: yellow;
+    }
+    ul {
+        color: black;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+    nav {
+        background-color: lightgreen;
+    }
+    ul {
+        color: black;
+    }
+  }  
+
+  @media screen and (min-width: 992px) {
+    h1, p {
+        display: inline-block;
+      }
+
+    nav {
+        background-color: red;
+    }
+    ul {
+        color: white;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    nav {
+        background-color: grey;
+    }
+    ul {
+        color: yellow;
+    }
+  }
