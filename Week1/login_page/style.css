@@ -129,7 +129,7 @@ label {
      display: inline-block;
      vertical-align: middle;
      color: white;
-     font-size: 16px;
+     font-size: 24px;
      font-weight: bold;
 }
 
@@ -147,4 +147,12 @@ label {
 .register i {
     font-size: 2rem;
     padding: 0 10px;
+}
+
+.arrow{
+    background-color: aqua;
+    border-radius: 50px;
+    border: none;
+    width: 55px;
+    height: 55px;
 }
