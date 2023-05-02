@@ -107,7 +107,7 @@ label {
   }
 
   .second {
-    background-color: aqua;
+    background: linear-gradient(to bottom, rgb(42, 34, 56), rgb(11, 40, 133));
   }
 
   .fa-user-plus {
@@ -150,7 +150,7 @@ label {
 }
 
 .arrow{
-    background-color: aqua;
+    background-color: rgb(29, 37, 91);
     border-radius: 50px;
     border: none;
     width: 55px;

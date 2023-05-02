@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* border: 1px solid red; */
+    background-color: rgb(246, 246, 246);
+    padding: 10px;
+}
+
+header {
+    /* border: 1px solid red; */
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+.logo {
+    /* border: 1px solid red; */
+    height: 20vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.line {
+    height: 3px;
+    width: 5rem;
+    background-color: rgb(97, 205, 94);  
+}
+
+.job {
+    font-size: 1.5rem;
+    color: rgb(169, 169, 140);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+hr {
+    width: 85%;
+    margin: 0 auto;
+    color: rgb(235, 235, 214);
+}
+
+section {
+    /* border: 1px solid red; */
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0px 20px;
+    background-color: rgb(235, 235, 214);
+    
+}
+
+.info {
+    /* border: 1px solid red; */
+    padding: 50px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.contacts {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+i {
+    margin-right: 10px;
+}
