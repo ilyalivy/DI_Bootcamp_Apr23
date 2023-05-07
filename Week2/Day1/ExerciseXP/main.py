@@ -89,8 +89,9 @@ else:
 #
 # Write code that asks the user for their name and determines whether or not you have the same name, print out a funny message based on the outcome.
 
+my_name = 'Ilya'
 name = input('Enter your name:')
-if name == 'Ilya':
+if name.lower() == my_name.lower():
     print('Hoooooray we have same names!!')
 else:
     print('Different names is good')
