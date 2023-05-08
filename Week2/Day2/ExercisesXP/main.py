@@ -49,7 +49,7 @@ basket = ["Banana", "Apples", "Oranges", "Blueberries"]
 basket.pop(0)
 print(basket)
 
-basket.remove('Blueberries')
+basket.remove("Blueberries")
 print(basket)
 
 basket.append("Kiwi")
