@@ -6,8 +6,8 @@
 #
 # Suppose the following input is supplied to the program: without,hello,bag,world
 # Then, the output should be: bag,hello,without,world
-#
-# sequence = input('Enter comma separated sequence of words:')
+
+sequence = input('Enter comma separated sequence of words:')
 
 sorted_sequence = ','.join([word for word in sorted(sequence.split(','))])
 

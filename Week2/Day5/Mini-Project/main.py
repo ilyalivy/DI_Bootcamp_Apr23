@@ -13,7 +13,7 @@ def printBoard(board):
     print('\nTIC TAC TOE')
     for i in range(9):
         row = ''
-        for j in range(17):
+        for j in range(36):
             if i == 0 or i == 8 or j == 0 or j == 35:
                 row += '*'
             elif j == 12 or j == 22:
