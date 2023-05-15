@@ -62,6 +62,7 @@ class Farm:
             self.animals_list.append(key)
         sorted_animals = sorted(self.animals_list)
         return sorted_animals
+        #return sorted(list(self.animals.keys())
 
     def get_short_info(self):
         return f"McDonald’s farm has {self.get_animal_types()[0]}s, {self.get_animal_types()[1]}s and {self.get_animal_types()[2]}."
