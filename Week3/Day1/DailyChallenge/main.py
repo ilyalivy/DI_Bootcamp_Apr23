@@ -54,7 +54,7 @@ class Farm:
         print(f"{self.name}'s farm\n")
         for key, value in self.animals.items():
             print(f"{key} : {value}")
-        return "\n    E-I-E-I-O!    "
+        print ("\n \tE-I-E-I-O!")
 
     def get_animal_types(self):
         self.animals_list = []
@@ -71,6 +71,6 @@ macdonald.add_animal('cow', 5)
 macdonald.add_animal('sheep')
 macdonald.add_animal('sheep')
 macdonald.add_animal('goat', 12)
-print(macdonald.get_info())
+macdonald.get_info()
 print(macdonald.get_animal_types())
 print(macdonald.get_short_info())
