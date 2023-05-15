@@ -48,7 +48,7 @@ class Farm:
         if new_animal not in self.animals.keys():
             self.animals[new_animal] = amount_of_animals
         else:
-            self.animals[new_animal] += 1
+            self.animals[new_animal] += amount_of_animals
 
     def get_info(self):
         print(f"{self.name}'s farm\n")
