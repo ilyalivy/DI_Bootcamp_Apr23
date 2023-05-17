@@ -1,4 +1,4 @@
-# Create a class to handle paginated content in a website. A pagination is used to divide long lists of content in a series of pages.
+# Create a class to handle paginated content in a website. A pagination is used to divide long lists of content in a series of pag#Juliana, I should submit this on 15th, will be ready by the end of the week.
 #
 # The Pagination class will accept 2 parameters:
 #
