@@ -105,7 +105,7 @@ class Pagination:
                 print(f'you requested a wrong page, you moved to the last page')
                 self.current_page = self.total_pages
 
-alphabetList = list("abcdefghijklmnopqrstuvwxyz")
+alphabetList = list('abcdefghijklmnopqrstuvwxyz')
 
 pages = Pagination(alphabetList, 3)
 print(pages.get_visible_items())
