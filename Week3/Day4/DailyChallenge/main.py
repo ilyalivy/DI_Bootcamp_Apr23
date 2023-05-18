@@ -31,7 +31,7 @@
 class Text:
     def __init__(self, a):
         self.a = a
-        self.text_lower = self.a.lower()
+        self.text_lower = self.a.replace('.', '').lower()
         self.text_list = self.text_lower.split()
 
     def word_frequency(self, word):
@@ -47,6 +47,7 @@ class Text:
                 word_count[word] += 1
             else:
                 word_count[word] = 1
+        print('Most common word(s):')
         max_count = max(word_count.values())
         return ', '.join([word for word, count in word_count.items() if count == max_count])
 
@@ -64,25 +65,22 @@ class Text:
         return unique_words
 
 
-
-
     @classmethod
     def from_file(cls, filename):
         with open(filename, 'r') as file:
             text = file.read()
         return cls(text)
 
-text_from_file = Text.from_file('the_stranger.txt')
 
-print(text_from_file.word_frequency('the'))
-print(text_from_file.most_common_word())
-print(text_from_file.most_unique_words())
-
-
-
-
-text_obj = Text('A good book would sometimes cost as much as a good house')
+text_obj = Text('A good book would sometimes cost as much as a good house.')
 
 print(text_obj.word_frequency('house'))
 print(text_obj.most_common_word())
 print(text_obj.most_unique_words())
+
+
+text_from_file = Text.from_file('the_stranger.txt')
+
+print(text_from_file.word_frequency('sun'))
+print(text_from_file.most_common_word())
+print(text_from_file.most_unique_words())
