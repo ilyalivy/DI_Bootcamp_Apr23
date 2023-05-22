@@ -76,3 +76,21 @@
 
 
 
+
+----------DAILY CHALLENGE----------
+
+
+
+
+
+-- Instructions
+
+-- In this exercise we will be using the actors table from todays lesson. 
+-- 1. Count how many actors are in the table.
+-- 2. Try to add a new actor with some blank fields. What do you think the outcome will be ?
+
+-- SELECT COUNT(*) AS actor_count FROM actor
+-- INSERT INTO actor (first_name, last_name, birth_date, number_oscars) 
+-- VALUES ('', '', '2000-01-01', 1)
+
+-- SELECT * FROM actor
