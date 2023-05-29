@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from data import people
 # Create your views here.
 
 people = [
@@ -35,13 +34,6 @@ def show_list(request):
         'sorted_people' : sorted_people
     }
     return render(request, 'people.html', context)
-
-
-def show_person(request, id):
-    for i in people:
-        if i['id'] == int(id):
-            context = i
-    return render(request, 'person.html', context)
 
 def show_person(request, id: int):
     person = None
