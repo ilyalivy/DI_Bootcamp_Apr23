@@ -1,7 +1,29 @@
 from django.shortcuts import render
+from .forms import CategoryForm, GifForm
 from .models import Gif, Category
 
 # Create your views here.
+
+def add_category_view(request):
+    if request.method == 'POST':
+                data = request.POST
+                filled_form = CategoryForm(data)
+                filled_form.save()
+
+    category_form = CategoryForm()
+    context = {'form': category_form}
+    return render(request, 'add_category.html', context)
+
+
+def add_gif_view(request):
+    if request.method == 'POST':
+                data = request.POST
+                filled_form = GifForm(data)
+                filled_form.save()
+
+    category_form = GifForm()
+    context = {'form': category_form}
+    return render(request, 'add_gif.html', context)
 
 def homepage(request):
 
