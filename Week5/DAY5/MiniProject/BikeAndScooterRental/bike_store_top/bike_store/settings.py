@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'bike_store.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo',
+        'NAME': 'bike_store',
         'USER': 'postgres',
         'PASSWORD': 'root',
         'HOST': 'localhost',

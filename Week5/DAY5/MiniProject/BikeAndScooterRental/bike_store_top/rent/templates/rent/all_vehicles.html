@@ -1,0 +1,24 @@
+{% extends 'rent/base.html' %}
+
+{% block content %}
+    <h1>All vehicles grouped</h1>
+    <div style='display: inline-block; vertical-align: top; margin-left: 50px;'>
+    <h2>Bikes:</h2>
+    {% for i in grouped_bike %}
+            {{i}} <br>
+    {% endfor %}
+    </div>
+    <div style='display: inline-block; vertical-align: top; margin-left: 50px;'>
+    <h2>Scooters:</h2>
+    {% for i in grouped_scooter %}
+            {{i}} <br>
+    {% endfor %}
+    </div>
+    <div style='display: inline-block; vertical-align: top; margin-left: 50px;'>
+    <h2>Electric bikes:</h2>
+    {% for i in grouped_electric_bike %}
+            {{i}} <br>
+    {% endfor %}
+    </div>
+    
+{% endblock content %}
