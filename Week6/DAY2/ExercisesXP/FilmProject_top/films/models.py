@@ -1,6 +1,7 @@
 from django.db import models
 from accounts.models import CustomUser
 
+
 # Create your models here.
 
 class Country(models.Model):
@@ -22,6 +23,7 @@ class Film(models.Model):
     available_in_countries = models.ManyToManyField('Country', related_name='film_available')
     category = models.ManyToManyField('Category', related_name='film_category')
     director = models.ManyToManyField('Director', related_name='film_director')
+    producer = models.ManyToManyField('Producer')
 
     def __str__(self):
         return self.title
@@ -45,6 +47,7 @@ class Review(models.Model):
     review_text = models.TextField()
     rating = models.IntegerField(choices=RatingChoices.choices)
     review_date = models.DateTimeField(auto_now_add=True)
+    review_author = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
 
 class Producer(models.Model):
     first_name = models.CharField(max_length=50)
