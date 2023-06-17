@@ -1,4 +1,5 @@
 from django.db import models
+from accounts.models import CustomUser
 
 # Create your models here.
 
@@ -44,3 +45,10 @@ class Review(models.Model):
     review_text = models.TextField()
     rating = models.IntegerField(choices=RatingChoices.choices)
     review_date = models.DateTimeField(auto_now_add=True)
+
+class Producer(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
