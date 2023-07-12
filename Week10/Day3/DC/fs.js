@@ -5,13 +5,15 @@ fs.readFile('RightLeft.txt','utf-8', (err, data) => {
     let position = 0;
     const characters = data.split('');
     console.log(characters);
-    characters.forEach((element) => {
-        if(element==='>'){
+    for(element of characters) {
+        if(element === '>'){
             position++;
-        }else{
+        } else if (element==='<') {
             position--;
+        } else {
+            continue;
         }
-    })
+    }
     if (position > 0){
         console.log(`${position} steps to the right`)
     }else {
